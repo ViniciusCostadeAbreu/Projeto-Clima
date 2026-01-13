@@ -6,18 +6,21 @@
     <title>Projeto-Clima</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilos/estilo.css">
+    <script src="https://kit.fontawesome.com/d14f9af79b.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <h1>Previsão do Tempo</h1>
     </header>
     <main>
-        <section id="cidade">
-            <h2>Cidade:
+        <div class="buscar-cidade">
+            <section id="cidade">
+                <i class="fa-solid fa-location-dot"></i>
                 <input type="text" name="cid" id="cid" placeholder="digite o nome da cidade">
-                <input type="button" value="Buscar">
-            </h2>
-        </section>
+            </section>
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
         <section id="clima">
 
         </section>

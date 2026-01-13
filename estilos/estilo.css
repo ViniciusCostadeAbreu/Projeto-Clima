@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+
+}
+
+main{
+
+}
+
+.buscar-cidade{
+    display: flex;
+    align-items: center;
+}
+
+.buscar-cidade i{
+    height: 18px;
+    margin-left: 6px;
+    cursor: pointer;
+}
+
+#cidade{
+    position: relative;
+}
+
+#cidade i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+#cidade input{
+    height: 30px;
+    padding-left: 30px;
+    padding-right: 10px;
+    font-size: 14px;
+}
+
