@@ -3,6 +3,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 body{
@@ -22,10 +23,18 @@ main{
     align-items: center;
 }
 
-.buscar-cidade i{
-    height: 18px;
+.buscar-cidade #btn-buscar{
+    height: 30px;
     margin-left: 6px;
+    border: none;
+    background: white;
+    color: black;
     cursor: pointer;
+    border-radius: 4px;
+}
+
+.buscar-cidade #btn-buscar i{
+    font-size: 1.5em;
 }
 
 #cidade{
@@ -34,6 +43,7 @@ main{
 
 #cidade i{
     position: absolute;
+    left: 5px;
     top: 50%;
     transform: translateY(-50%);
     pointer-events: none;
@@ -41,7 +51,7 @@ main{
 
 #cidade input{
     height: 30px;
-    padding-left: 30px;
+    padding-left: 31px;
     padding-right: 10px;
     font-size: 14px;
 }
