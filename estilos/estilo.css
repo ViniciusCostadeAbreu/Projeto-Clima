@@ -8,37 +8,58 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-}
-
-header{
-
+    color: black;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+    url("/imagens/fundo-clima2.jpg") center/cover no-repeat;
+    background-attachment: fixed;
 }
 
 main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;   
+}
 
+#card-clima{
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px);
+    min-height: 500px;
+    min-width: 350px;
+    text-align: center;
+}
+
+#card-clima h1{
+    margin-top: 10px;
+    color: rgb(255, 255, 255, 0.8);
 }
 
 .buscar-cidade{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .buscar-cidade #btn-buscar{
     height: 30px;
     margin-left: 6px;
     border: none;
-    background: white;
-    color: black;
+    background: transparent;
+    color: rgb(255, 255, 255, 0.653);
     cursor: pointer;
     border-radius: 4px;
 }
 
 .buscar-cidade #btn-buscar i{
     font-size: 1.5em;
+    margin-top: 15px;
 }
 
 #cidade{
     position: relative;
+    margin-top: 20px;
 }
 
 #cidade i{
@@ -47,6 +68,7 @@ main{
     top: 50%;
     transform: translateY(-50%);
     pointer-events: none;
+    color: rgba(255, 255, 255, 0.653);
 }
 
 #cidade input{
@@ -54,5 +76,14 @@ main{
     padding-left: 31px;
     padding-right: 10px;
     font-size: 14px;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+#cidade input::placeholder{
+    color: rgb(255, 255, 255, 0.8);
+    text-align: center;
+    font-size: 1.1em;
+    font-style: italic;
 }
 
