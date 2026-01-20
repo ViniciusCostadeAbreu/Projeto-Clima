@@ -17,6 +17,8 @@ function buscarCidade(){
 
     if(cidade === ''){
         mensagem("Por favor, informe uma cidade valida")
+        txtcid.value = ''
+        txtcid.focus()
     }else{   
         res.innerHTML = `Buscando clima para <strong>${txtcid.value}...</strong>`  
     }
