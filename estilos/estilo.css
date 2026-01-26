@@ -152,15 +152,15 @@ section#clima{
 
 /* cores por clima */
 .clima-sol {
-    background-color: rgba(255, 223, 100, 0.8);
+    background-color: rgba(237, 127, 24, 0.792);
 }
 
 .clima-nublado {
-    background-color: rgba(180, 180, 180, 0.8);
+    background-color: rgba(79, 74, 74, 0.8);
 }
 
 .clima-chuva {
-    background-color: rgba(120, 170, 255, 0.8);
+    background-color: rgba(0, 183, 255, 0.779);
 }
 
 .clima-neve {
