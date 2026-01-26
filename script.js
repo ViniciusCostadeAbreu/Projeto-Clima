@@ -49,12 +49,22 @@ function mostrarClima(data) {
     const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`
 
     res.innerHTML = `
-        <h2>${data.name}</h2>
-        <img src="${iconUrl}" alt="${data.weather[0].description}">
-        <p>${data.main.temp}°C</p>
-        <p>${data.weather[0].description}</p>
-    `
+        <div class="clima-info">
+            <h2 class="cidNome">${data.name}</h2>
 
+            <div class="clima-principal">
+                <img src="${iconUrl}" alt="${data.weather[0].description}">
+                <span class="temperatura">${Math.round(data.main.temp)}°C</span>
+            </div>
+    
+            <p class="descricao">${data.weather[0].description}</p>
+
+            <div class="detalhes">
+                <p>Sensação térmica: ${Math.round(data.main.feels_like)}°C</p>
+                <p>Umidade: ${data.main.humidity}%</p>
+            </div>
+        </div>   
+    `
     return res.innerHTML
 }
 
