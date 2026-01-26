@@ -10,8 +10,34 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-    url("/imagens/fundo-clima3.jpg") center/cover no-repeat;
+    url("/imagens/fundo-clima2.jpg") center/cover no-repeat;
     background-attachment: fixed;
+    transition: background 1s ease-in-out;
+}
+
+body.sol {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+    url("/imagens/sol.jpg") center/cover no-repeat;
+}
+
+body.nublado {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+    url("/imagens/nublado.jpg") center/cover no-repeat;
+}
+
+body.chuva {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+    url("/imagens/chuva.jpg") center/cover no-repeat;
+}
+
+body.neve {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+    url("/imagens/neve.jpg") center/cover no-repeat;
+}
+
+body.neblina {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+    url("/imagens/neblina.jpg") center/cover no-repeat;
 }
 
 main{
@@ -27,8 +53,6 @@ main{
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(4px);
-    /*min-height: 130px;*/
-    /*min-width: 350px;*/
     max-width: 400px;
     width: 90%;
     text-align: center;
@@ -112,16 +136,39 @@ section#clima{
 .clima-info{
     margin-top: 20px;
     padding: 20px;
-    color: black;
+    color: white;
+    text-align: center;
     border: 1px solid white;
     border-radius: 50px 5px;
-    background-color: rgba(157, 212, 233, 0.779);
+    background-color: rgba(0, 183, 255, 0.779);
     animation: fadeIn 0.5s ease-in-out;
 }
 
 @keyframes fadeIn {
    from { opacity: 0; transform: translateY(10px); }
    to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* cores por clima */
+.clima-sol {
+    background-color: rgba(255, 223, 100, 0.8);
+}
+
+.clima-nublado {
+    background-color: rgba(180, 180, 180, 0.8);
+}
+
+.clima-chuva {
+    background-color: rgba(120, 170, 255, 0.8);
+}
+
+.clima-neve {
+    background-color: rgba(230, 240, 255, 0.9);
+}
+
+.clima-neblina {
+    background-color: rgba(200, 200, 200, 0.8);
 }
 
 .cidNome{
@@ -152,8 +199,11 @@ section#clima{
 }
 
 .detalhes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
     margin-top: 15px;
-    font-size: 0.9em;
+    font-size: .9em;
     opacity: 0.9;
 }
 
