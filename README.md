@@ -4,8 +4,8 @@ O usuário pode pesquisar uma cidade e visualizar temperatura, sensação térmi
 
 Tecnologias:
 
-HTML5
-CSS3
-JavaScript (ES6)
-Fetch API
+HTML5,
+CSS3,
+JavaScript (ES6),
+Fetch API,
 OpenWeather API
