@@ -1,7 +1,7 @@
 let txtcid = window.document.getElementById('cid')
 let botao = window.document.getElementById('btn-buscar')
 let res = window.document.querySelector('section#clima')
-const API_KEY = '8b3066d39459bb6f8a13b787b2be7391'
+const API_KEY = 'SUA_API_KEY_AQUI'
 const URL_BASE = 'https://api.openweathermap.org/data/2.5/weather'
 
 

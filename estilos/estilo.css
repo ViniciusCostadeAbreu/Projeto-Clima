@@ -12,7 +12,7 @@ body{
     background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
     url("../imagens/fundo-clima2.jpg") center/cover no-repeat;
     background-attachment: fixed;
-    transition: background 1s ease-in-out;
+    transition: background 0.8s ease-in-out;
 }
 
 body.sol {
@@ -27,7 +27,7 @@ body.nublado {
 
 body.chuva {
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
-    url("../imagens/chuva.png") center/cover no-repeat;
+    url("../imagens/chuva.jpg") center/cover no-repeat;
 }
 
 body.neve {
